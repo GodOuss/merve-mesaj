@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merve'ye Özel Mesaj</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            text-align: center;
+        }
+        h1 {
+            color: #ff7f7f;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            color: white;
+            background-color: #ff4c4c;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #e04343;
+        }
+        .message {
+            display: none;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #ff4c4c;
+        }
+    </style>
+</head>
+<body>
+
+<h1>💌 Merve'ye Özel Mesaj 💌</h1>
+<button onclick="gosterMesaj()">Tıkla ve Mesajı Gör!</button>
+<div class="message" id="message">
+    <p><strong>Merve, seni çok seviyorum 💖</strong></p>
+</div>
+
+<script>
+    function gosterMesaj() {
+        var mesajDiv = document.getElementById("message");
+        mesajDiv.style.display = "block";
+    }
+</script>
+
+</body>
+</html>
